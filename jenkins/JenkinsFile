@@ -16,6 +16,11 @@ pipeline{
                    echo "Code is delivered"
             }
         }
+       stage("completed"){
+            steps{
+                   echo "Code is completed"
+            }
+        }
     }
     
 }
