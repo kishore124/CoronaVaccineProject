@@ -90,7 +90,7 @@ public class CoronaVaccine implements Serializable {
 	@Override
 	public String toString() {
 		return "CoronaVaccine [vaccineId=" + vaccineId + ", name=" + name + ", companyName=" + companyName
-				+ ", country=" + country + ", price=" + price + ", noOFDoses=" + noOFDoses + "]";
+				+ ", country=" + country + ", price=" + price + ", noOFDoses :: " + noOFDoses + "]";
 	}
 
 	public LocalDate getCreatedDate() {
