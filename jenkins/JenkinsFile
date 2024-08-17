@@ -11,6 +11,11 @@ pipeline{
                     sh "mvn test"
             }
         }
+        stage("deliver"){
+            steps{
+                   echo "Code is delivered"
+            }
+        }
     }
     
 }
