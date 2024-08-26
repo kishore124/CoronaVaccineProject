@@ -11,6 +11,11 @@ pipeline{
                     sh "mvn test"
             }
         }
+        stage("Remote build"){
+            steps{
+                  build 'BooleanParamPipeline'
+            }
+        }
         stage("deliver"){
             steps{
                    echo "Code is delivered"
